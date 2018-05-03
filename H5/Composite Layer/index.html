@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .opacity {
+      margin: 20px;
+      width: 150px;
+      height: 150px;
+      background: #008cee;
+      transition: opacity 5s ease;
+    }
+
+    .opacity:hover {
+      opacity: .5
+    }
+  </style>
+</head>
+
+<body>
+  <div>1111111</div>
+  <div style="color:red;transform: translateZ(30px)">translate3d、 translateZ 产生新的复合图层</div>
+  <div class="opacity">opacity 产生新的复合图层   ps:只有在过渡的过程中才会产生</div>
+</body>
+<script src="main.js"></script>
+<script>
+  console.log(document)
+  window.onload = function () {
+    console.log('onload')
+  }
+  addEventListener('DOMContentLoaded', function () {
+    console.log('DOMContentLoaded')
+  })
+  window.DOMContentLoaded = function () {
+    console.log('DOMContentLoaded')
+  }
+</script>
+
+</html>

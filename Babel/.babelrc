@@ -1,0 +1,11 @@
+{
+  "babelrc": false,
+ 
+  "plugins": [],
+  "presets": [
+    "env"
+  ],
+  "ignore": [
+    "ignore.js"
+  ]
+}
